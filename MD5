@@ -1,0 +1,10 @@
+578e222dcf002e0ffcefc52fbf177c56 *DESCRIPTION
+c9b835a202a4ac5ded9bb5dbfcc5835a *NAMESPACE
+9e343280864310f74342d6e12493d334 *R/RcppExports.R
+2178f7420beee880590e32cbfc3c5618 *R/estimateSNR.R
+84d6afe5f142683a45a29c89d922b80d *data/a_vs_R0dN.rda
+3817e7f80e5d1aff441b2e57d3fe5672 *man/a_vs_R0dN.Rd
+fba1ac33e8c7f66f35c30028797d377f *man/estimateSNR.Rd
+de214c90b7fccc2ac9d22c4ea27f2d2b *man/sharpeRratio-package.Rd
+59e1c3a0123cd88157a43aeb323e67bb *src/RcppExports.cpp
+5d01e35d1c0ef9d3ba75b1ef890d5836 *src/num_records.cpp
