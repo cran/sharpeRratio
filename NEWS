@@ -1,0 +1,6 @@
+sharpeRratio v1.2 (Release date: 2019-12-02)
+==============
+
+Changes:
+
+* Updated splines to compute the Sharpe ratio from the number of records of the cumulated sample sum. This corrects the bias of the first version of this package and leads to less pessimistic estimates of Sharpe ratio when the tails are heavy. Remaining bias estimate is between -4% and +10%, depending on the value of the tail exponent of the sample distribution.
