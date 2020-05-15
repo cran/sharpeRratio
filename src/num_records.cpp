@@ -76,9 +76,9 @@ List computeR0bar(NumericVector x, int numPerm=100, double q1=0.025, double q2=0
   std::sort(R0s.begin(), R0s.end());
   int idx;
   
-  idx = std::ceil(q1 * numPerm*1.);
+  idx = std::floor(q1 * numPerm*1.);
   double R0_q1 = R0s[idx];
-  idx = std::ceil(q2 * numPerm*1.);
+  idx = std::floor(q2 * numPerm*1.);
   double R0_q2 = R0s[idx];
   
   R0bar/=numPerm;

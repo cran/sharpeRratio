@@ -1,6 +1,6 @@
-263312bf36428c8f3232fe217483a873 *DESCRIPTION
+4b0828b50983e5d1e264ec7cf11b4a31 *DESCRIPTION
 c498e4f6b7f992c22b4c04539ca5b177 *NAMESPACE
-37220e367523690de8fb7389d953648c *NEWS
+dc8a7fa573e07243c027a740ff76501d *NEWS
 065dafa4e57af115bb97bb79ad10f2cc *R/RcppExports.R
 d62b5478aeec4d98a7c4115b83b76c7a *R/estimateSNR.R
 af1d1b21811da1932c2f1ea6d0768a69 *R/sysdata.rda
@@ -11,4 +11,4 @@ f3dea61d40e6b1312b8cd624c7f30387 *man/num_records_down.Rd
 ef4867e2069bbf7e7aa4c2b2ab99bb1b *man/num_records_up.Rd
 337fd219fd83066e57f9148a0460cb04 *man/sharpeRratio-package.Rd
 92c8471d4c225d521907175258b143ca *src/RcppExports.cpp
-48a35490f70c725d3c52daf85ecde4bb *src/num_records.cpp
+8cda6f29f447f9b1817f56849d389a78 *src/num_records.cpp

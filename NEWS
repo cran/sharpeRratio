@@ -18,4 +18,5 @@ sharpeRratio v1.4 (Release date: 2020-02-12)
 
 Changes:
 
-* Addition of several robust statistics-based estimators.
+* Very large (and unlikely) Sharpe ratios are now better accounted for.
+* Addition of confidence intervals, based on the permutations of sample values. Use it only if you know the tail exponent of the distribution of sample values.
