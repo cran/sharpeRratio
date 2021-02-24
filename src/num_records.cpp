@@ -1,8 +1,6 @@
-#include <algorithm>    // std::random_shuffle
+#include <algorithm>    // std::shuffle
 #include <Rcpp.h>
-// wrapper around R's RNG such that we get a uniform distribution over
-// [0,n) as required by the STL algorithm
-inline int randWrapper(const int n) { return floor(unif_rand()*n); }
+#include <random>
 
 using namespace Rcpp;
 
@@ -56,6 +54,9 @@ int num_records_down(NumericVector x){
 //' 
 // [[Rcpp::export]]
 List computeR0bar(NumericVector x, int numPerm=100, double q1=0.025, double q2=0.975){
+  std::random_device rng;
+  std::mt19937 urng(rng());
+  
   int N=x.size();
   NumericVector cumvec(N);
   double R0bar=0.;
@@ -70,7 +71,7 @@ List computeR0bar(NumericVector x, int numPerm=100, double q1=0.025, double q2=0
     R0=num_records_up(cumvec)-num_records_down(cumvec);
     R0s[perm]=R0;
     R0bar+=R0;
-    std::random_shuffle (x.begin(), x.end(),randWrapper);
+    std::shuffle (x.begin(), x.end(),urng);
   }
   
   std::sort(R0s.begin(), R0s.end());

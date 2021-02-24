@@ -20,3 +20,12 @@ Changes:
 
 * Very large (and unlikely) Sharpe ratios are now better accounted for.
 * Addition of confidence intervals, based on the permutations of sample values. Use it only if you know the tail exponent of the distribution of sample values.
+
+sharpeRratio v1.4.2 (Release date: 2021-02-23)
+==============
+
+Changes:
+
+* random_shuffle -> shuffle in the C++ code 
+
+
