@@ -1,6 +1,7 @@
 #' @importFrom stats var quantile
 #' @importFrom ghyp fit.tuv coef
 #' @import Rcpp
+#' @importFrom methods is
 #' @useDynLib sharpeRratio
 
 
@@ -92,7 +93,7 @@ estimateSNR=function(x,numPerm=NA,nu=NA,quantiles=c(0.05,0.95)){
       
     }else{
       myfit=tryCatch(ghyp::fit.tuv(x,silent=TRUE,nu=6),error=function(e){return(NA)})
-      if(!class(myfit)=="mle.ghyp"){
+      if(is(myfit,"ghyp")){
         nu=1e13  #fit.tuv fails on Gaussian data. 
       }else{
         nu=coef(myfit)$nu
